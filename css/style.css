@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- FONDO GENERAL ---------- */
+body {
+    margin: 0;
+    background: #888;
+}
+
+/* ---------- FORMULARIO ---------- */
+.toolbar {
+    background: #f1f1f1;
+    padding: 15px 25px;
+    border-bottom: 3px solid #555;
+}
+
+.toolbar h1 {
+    margin: 0 0 10px 0;
+}
+
+.toolbar label {
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons button {
+    padding: 8px 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ddd;
+}
+
+/* ---------- SECCIÓN ELEMENTOS ---------- */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    margin-bottom: 15px;
+}
+
+/* ---------- GRID DE TARJETAS ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ---------- TARJETA ---------- */
+.card {
+    background: #888;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------- IMAGEN ---------- */
+.card img {
+    width: 140px;      /* aquí se hacen pequeñas */
+    height: 140px;
+    object-fit: contain;
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+/* ---------- BOTONES DE TARJETA ---------- */
+.card button {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card .change {
+    background: #f2f2f2;
+}
+
+.card .delete {
+    background: #e0e0e0;
+}
+
+.card button:hover {
+    opacity: 0.8;
+}
